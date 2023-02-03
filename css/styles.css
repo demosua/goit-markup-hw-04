@@ -100,21 +100,16 @@ h1,h2,h3,h4,h5,h6,p,ul{
     color: var(--accent-color);
 }
 
-.contacts{
+.contacts {
     display: flex;
     margin-left: auto;
 }
 
-.contacts .item{
+.contacts-item-link{
     display: flex;
+    margin-right: 10px;
     align-items: center;
-}
-
-.contacts .item:not(:last-child) {
-    margin-right: 40px;
-}
-
-.contacts a {
+    justify-content: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -122,48 +117,22 @@ h1,h2,h3,h4,h5,h6,p,ul{
     color: #757575;
 }
 
-.contacts a:hover {
+.contacts-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.contacts-item-link:hover,
+.contacts-item-link:focus {
     color: var(--accent-color);
 }
 
-.contacts .icon{
-    fill: var(--secondary-text-color);
-}
-
-.contacts .icon:hover {
-    fill: var(--accent-color);
-}
-
-.envelope {
+.contacts-item-link .icon{
     margin-right: 10px;
-    fill: currentColor;
 }
 
-.smartphone {
-    margin-right: 10px;
+.icon{
     fill: currentColor;
 }
-
-.antena {
-    fill: currentColor;
-}
-
-.instagram{
-    fill: currentColor;
-}
-
-.twitter {
-    fill: currentColor;
-}
-
-.facebook {
-    fill: currentColor;
-}
-
-.linkedin {
-    fill: currentColor;
-}
-
 
 
 /* hero */
@@ -324,6 +293,30 @@ h1,h2,h3,h4,h5,h6,p,ul{
 
 .social {
     display: flex;
+    justify-content: space-between;
+}
+.social-item-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    /* margin-top: 10px; */
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    color: #afb1b8;
+}
+
+
+.social-item-link:hover,
+.social-item-link:focus{
+    background-color: var(--accent-color);
+    color: #ffffff;
+}
+
+/* 
+.social {
+    display: flex;
     margin-right: auto;
     margin-left: auto;
     width: 206px;
@@ -344,13 +337,18 @@ h1,h2,h3,h4,h5,h6,p,ul{
     color: #afb1b8;
 }
 
-.social-item .link:hover {
-    color: #ffffff;
-}
-
 .social-item:hover{
     background-color: var(--accent-color);
 }
+
+.social-item:hover .icon{
+    fill: #ffffff;
+}
+
+.social .social-item:last-child {
+    margin-right: 0;
+}
+ */
 
 img {
     display: block;
@@ -358,14 +356,10 @@ img {
     height: auto;
 }
 
-
-.social .social-item:last-child {
-    margin-right: 0;
-}
-
 .teammate-description{
-    padding-bottom: 16px;
-    padding-top: 30px;
+
+    padding: 30px 32px;
+    
 }
 
 .teammate-name {
@@ -379,6 +373,8 @@ img {
 }
 
 .teammate-post {
+    margin-bottom: 16px;
+
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
