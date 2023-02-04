@@ -50,7 +50,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
 
 /* форматування логотипу (в навігації слово поділене на дві частини і у утері також) */
 .logo {
-        display: block;
+    display: block;
     font-family: 'Raleway';
     font-size: 26px;
     font-weight: 700;
@@ -148,11 +148,8 @@ h1,h2,h3,h4,h5,h6,p,ul{
     margin-left: auto;
     margin-right: auto;
     background-color: var(--secondary-bg-color);
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(0, 0, 0, 0.4)
-    ), url(../images/img-min.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), url(../images/img-min.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -314,42 +311,6 @@ h1,h2,h3,h4,h5,h6,p,ul{
     color: #ffffff;
 }
 
-/* 
-.social {
-    display: flex;
-    margin-right: auto;
-    margin-left: auto;
-    width: 206px;
-}
-
-.social-item {
-    display: inline-flex;
-    margin-right: 10px;
-    width: 44px;
-    height: 44px;
-    align-items: center;
-    justify-content: center;
-    
-    border-radius: 50%;
-}
-
-.social-item .link{
-    color: #afb1b8;
-}
-
-.social-item:hover{
-    background-color: var(--accent-color);
-}
-
-.social-item:hover .icon{
-    fill: #ffffff;
-}
-
-.social .social-item:last-child {
-    margin-right: 0;
-}
- */
-
 img {
     display: block;
     max-width: 100%;
@@ -382,14 +343,12 @@ img {
     color: var(--secondary-text-color);
 }
 
-.clients{
+.clients {
     display: flex;
     flex-wrap: wrap;
-
-    list-style: none;
 }
 
-.clients .item{
+.clients-item-link {
     display: flex;
     width: 170px;
     height: 92px;
@@ -397,40 +356,34 @@ img {
     align-items: center;
 
     color: #afb1b8;
-    
+
 }
-.clients .item:not(:last-child) {
+
+.clients-item:not(:last-child) {
     margin-right: 30px;
 }
 
+.clients-item-link:hover,
+.clients-item-link:focus {
+    border-radius: 4px;
+    outline: 1px solid var(--accent-color);
 
-.clients .link  {
-    color: inherit;
-}
-
-.clients .link:hover {
     color: var(--accent-color);
 }
 
-.clients .icon {
-    fill: currentColor;
-}
-
-.clients .icon:hover {
-    fill: currentColor;
-}
 
 footer {
+    display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
     margin-left: auto;
     margin-right: auto;
 
-    align-items: baseline;
+    /* align-items: baseline; */
     background: var(--secondary-bg-color);
 }
 
-footer .link{
+footer .link:nth-child(1){
     margin-bottom: 20px;
 }
 
@@ -459,11 +412,6 @@ footer .link{
     color: var(--accent-color);
 }
 
-address {
-    display: inline-flex;
-    flex-wrap: wrap;
-}
-
 footer .title {
     display: inline-flex;
     flex-wrap: wrap;
@@ -480,15 +428,11 @@ footer .title {
 }
 
 .footer-social {
-    display: inline-flex;
-    flex-wrap: wrap;
+    display: flex;
+    margin-left: 70px;
 }
 
-.footer-social .link {
-    margin-bottom: 0;
-}
-
-.footer-social .item {
+.footer-social-item-link {
     display: inline-flex;
     width: 44px;
     height: 44px;
@@ -497,41 +441,40 @@ footer .title {
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
 
+    cursor: pointer;
     color: #ffffff;
 }
 
-.footer-social .item:not(:last-child) {
+
+.footer-social-item:not(:last-child) {
     margin-right: 10px;
 }
 
-.footer-social .link {
-    color: currentColor;
-}
-
-.footer-social .icon {
-    display: flex;
+.footer-social-item-link.icon {
     fill: currentColor;
 } 
 
-.footer-social .item:hover {
+.footer-social-item-link:hover,
+.footer-social-item-link:focus  {
     background: var(--accent-color);
 }
 
-.footer-social .icon {
-    fill: currentColor;
-}
-
-.footer-social .icon:hover {
-    fill: currentColor;
-}
-
 .link-contact {
-    margin-bottom: 12px;
+    margin-bottom: 9px;
 }
 
 .site-nav .current {
     color: var(--accent-color);
 }
+
+
+.footer-box {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+
 
 /* site-page potfolio */
 
