@@ -425,7 +425,6 @@ footer .title {
     flex-wrap: wrap;
     margin-top: 0px;
     margin-bottom: 20px;
-    margin-left: 70px;
     font-weight: 700;
     font-size: 14px;
 
@@ -437,11 +436,10 @@ footer .title {
 
 .footer-social {
     display: flex;
-    margin-left: 70px;
 }
 
 .footer-social-item-link {
-    display: inline-flex;
+    display: flex;
     width: 44px;
     height: 44px;
     justify-content: center;
@@ -477,12 +475,13 @@ footer .title {
 
 
 .footer-box {
-    display: inline-flex;
-    flex-wrap: wrap;
+    display: flex;
     align-items: baseline;
 }
 
-
+.join-us{
+    margin-left: 70px;
+}
 
 /* site-page potfolio */
 
