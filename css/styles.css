@@ -31,6 +31,10 @@ nav {
     list-style: none;
 }
 
+.link{
+    text-decoration: none;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -152,7 +156,6 @@ ul{
 
 .overlay{
     max-width: 1600px;
-    height: 480px;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--secondary-bg-color);
@@ -299,24 +302,27 @@ ul{
 .social {
     display: flex;
     justify-content: space-between;
+    
 }
+
 .social-item-link {
     display: flex;
     width: 44px;
     height: 44px;
-    /* margin-top: 10px; */
+
     align-items: center;
     justify-content: center;
 
     border-radius: 50%;
     color: #afb1b8;
+    
 }
 
 
 .social-item-link:hover,
 .social-item-link:focus{
     background-color: var(--accent-color);
-    color: #ffffff;
+    color: var(--primary-bg-color);
 }
 
 img {
@@ -374,25 +380,21 @@ img {
 .clients-item-link:hover,
 .clients-item-link:focus {
     border-radius: 4px;
-    outline: 1px solid var(--accent-color);
+    border: 1px solid var(--accent-color);
 
     color: var(--accent-color);
 }
 
 
 footer {
-    display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-left: auto;
-    margin-right: auto;
 
-    /* align-items: baseline; */
     background: var(--secondary-bg-color);
 }
 
-footer .link:nth-child(1){
-    margin-bottom: 20px;
+address {
+    margin-top: 20px;
 }
 
 .footer-geolocation  {
@@ -520,18 +522,18 @@ footer .title {
     margin: -15px;
 }
 
-.portfolio a {
-    text-decoration: none;
-}
 
-.portfolio > .item{
+.portfolio-item{
     width: 370px;
     margin: 15px;
-
-
 }
 
-.portfolio > .item:hover {
+.portfolio-item-link {
+    display: block;
+}
+
+.portfolio-item-link:hover,
+.portfolio-item-link:focus {
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
             0px 4px 4px rgba(0, 0, 0, 0.06),
             1px 4px 6px rgba(0, 0, 0, 0.16);
