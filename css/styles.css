@@ -292,7 +292,7 @@ ul{
 .members-list .item{
     width: 270px;
     margin: 15px;
-
+    background-color: var(--primary-bg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
                 0px 1px 1px rgba(0, 0, 0, 0.14),
                 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -302,8 +302,8 @@ ul{
 .social {
     display: flex;
     justify-content: space-between;
-    
 }
+
 
 .social-item-link {
     display: flex;
@@ -332,9 +332,7 @@ img {
 }
 
 .teammate-description{
-
     padding: 30px 32px;
-    
 }
 
 .teammate-name {
